@@ -46,7 +46,8 @@ footer {
 .footericonposition {
   text-align: center;
   padding: 0px 15px;
-  width: 50%;
+  width: 100%;
+  vertical-align: center;
 }
 .footer-social-overlap > a {
     font-size: 3em;
