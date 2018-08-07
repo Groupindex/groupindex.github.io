@@ -169,3 +169,12 @@ nav ul li:nth-child(-n+4):hover {
     }
 
 }
+caption {
+    width: 100%;
+    position: absolute;
+    background-color: #33a8ff;
+    border-top: 3px solid #0167b3;
+    text-align: center;
+    padding: 10px 15px;
+    color: #fff;
+}
