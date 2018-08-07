@@ -183,8 +183,8 @@ caption {
     color: #fff;
 }
 .question {
-    position: absolute;
+    position: inherit;
     text-align: left;
     width: 100%;
-    
+    top: 50px;
 }
