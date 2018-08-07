@@ -158,24 +158,16 @@ nav ul li:nth-child(-n+4):hover {
     }
 
 }
-<<<<<<< HEAD
-=======
 table {
     width: 100%;
     
 }
->>>>>>> 5d11439ec07fab4c04fbc6e70bbdbb692966e587
 caption {
     width: 100%;
     position: absolute;
     background-color: #33a8ff;
     border-top: 3px solid #0167b3;
     text-align: center;
-<<<<<<< HEAD
-    padding: 10px 15px;
-    color: #fff;
-}
-=======
     padding: 15px 20px;
     color: #fff;
 }
@@ -186,4 +178,3 @@ caption {
     top: 50px;
     margin-top: 50px;
 }
->>>>>>> 5d11439ec07fab4c04fbc6e70bbdbb692966e587
