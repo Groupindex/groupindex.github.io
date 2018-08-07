@@ -169,7 +169,10 @@ nav ul li:nth-child(-n+4):hover {
     }
 
 }
-
+table {
+    width: 100%;
+    
+}
 caption {
     width: 100%;
     position: absolute;
