@@ -104,13 +104,13 @@ nav ul li:nth-child(5):hover {
       background-color: #C70039;
       border-color: #C70039;
       transition: 1s;
-      -webkit-animation: circle 1.5s ease-in forwards; 
+      -webkit-animation: circle 1.5s ease-in-out forwards; 
 }
 nav ul li:nth-child(6):hover {
       background-color: #DAF7A6;
       border-color: #DAF7A6;
       transition: 1s;
-      -webkit-animation: circle 1.5s ease-in forwards; 
+      -webkit-animation: circle 1.5s ease-in-out forwards; 
 }
 nav ul li:nth-child(6) a:hover {
       color: #181818;
@@ -121,7 +121,7 @@ nav ul li:nth-child(-n+4):hover {
       padding-top: 10px;
       padding-bottom: 10px;
       transition: all .5s;
-      -webkit-animation: circle 1.5s ease-in forwards;
+      -webkit-animation: circle 1.5s ease-in-out forwards;
 }
 /*******Lolzzz*******/
 .menu-icon {
