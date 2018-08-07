@@ -182,3 +182,10 @@ caption {
     padding: 15px 20px;
     color: #fff;
 }
+.question {
+    position: absolute;
+    display: block;
+    text-align: left;
+    width: 100%;
+    
+}
