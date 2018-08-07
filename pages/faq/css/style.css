@@ -1,29 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Hind:300,400');
 
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
 
-html, body {
-    margin: 0;
-    padding: 0;
-    width: 100%;
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: "Helvetica Neue",sans-serif;
-    font-weight: lighter;
+  margin: 0;
+  padding: 0;
+  font-family: 'Hind', sans-serif;
+  background: #fff;
+  color: #4d5974;
+
+  min-height: 100vh;
 }
+
 
 header {
     width: 100%;
     height: 100px;
 }
-
-.content {
-    width: 100%;
-    margin: 20px auto;
-    font-size: 20px;
-    line-height: 10px;
-    text-align: justify;
-}
-
 .logo {
     line-height: 50px;
     position: fixed;
@@ -98,7 +99,7 @@ nav ul li:nth-child(6):hover {
     -webkit-animation: circle 1.5s ease-in forwards; 
     -webkit-animation: circle 1.5s ease-in backwards;
 }
-nav ul li:nth-child(6) a:hover {
+nav ul li:nth-child(6) .anav:hover {
     color: #181818;
     transition: .5s;
 }
@@ -158,25 +159,112 @@ nav ul li:nth-child(-n+4):hover {
     }
 
 }
-table {
-    width: 100%;
-    
+
+/** FAW **/
+section {
+	width: 100%;
+	position: absolute;
 }
-caption {
-    width: 100%;
-    position: absolute;
-    background-color: #33a8ff;
-    border-top: 3px solid #0167b3;
-    text-align: center;
-    padding: 15px 20px;
-    color: #fff;
-}
-.question {
-    position: absolute;
-    text-align: left;
-    width: 100%;
-    top: 50px;
-    margin-top: 50px;
+.container {
+  margin: 0 auto;
+  padding: 6em;
+  width: 100%;
 }
 
+h2 {
+  font-family: 'Quicksand';
+  font-size: 40px;
+  width: 50%;
+  color: #fff;
+  padding: 1.3rem;
+  margin: 0;
+  background-color: #FF5733;
+  text-align: center;
+  vertical-align: center;
+  border-radius: 15px 30px;
+}
 
+.accordion a {
+  position: relative;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  padding: 1rem 3rem 1rem 1rem;
+  color: #FF5733;
+  font-size: 1.15rem;
+  font-weight: 400;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.accordion a:hover,
+.accordion a:hover::after {
+  cursor: pointer;
+  color: #FF5733;
+}
+
+.accordion a:hover::after {
+  border: 1px solid #FF5733;
+}
+
+.accordion a.active {
+  color: #FF5733;
+  border-bottom: 1px solid #FF5733;
+}
+
+.accordion a::after {
+  font-family: 'Ionicons';
+  content: '\f218';
+  position: absolute;
+  float: right;
+  right: 1rem;
+  font-size: 1rem;
+  color: #7288a2;
+  padding: 5px;
+  width: 30px;
+  height: 30px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+  border: 1px solid #7288a2;
+  text-align: center;
+}
+
+.accordion a.active::after {
+  font-family: 'Ionicons';
+  content: '\f209';
+  color: #FF5733;
+  border: 1px solid #FF5733;
+}
+
+.accordion .content {
+  opacity: 0;
+  padding: 0 1rem;
+  max-height: 0;
+  border-bottom: 1px solid #e5e5e5;
+  overflow: hidden;
+  clear: both;
+  -webkit-transition: all 0.2s ease 0.15s;
+  -o-transition: all 0.2s ease 0.15s;
+  transition: all 0.2s ease 0.15s;
+}
+
+.accordion .content p {
+  font-size: 1rem;
+  font-weight: 300;
+}
+
+.accordion .content.active {
+  opacity: 1;
+  padding: 1rem;
+  max-height: 100%;
+  -webkit-transition: all 0.35s ease 0.15s;
+  -o-transition: all 0.35s ease 0.15s;
+  transition: all 0.35s ease 0.15s;
+}

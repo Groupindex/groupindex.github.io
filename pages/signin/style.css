@@ -76,3 +76,20 @@ input {
 	float: center;
 	display: block;
 }
+
+/** PARA SA BABA NG INPUT  **/
+
+.letsgo {
+	font: 12px arial;
+	margin: 0px 5px;
+	margin-left: 20px;
+	padding: 10px;
+	padding-left: 50px;
+	float: left;
+	text-decoration: none;
+	color: #FF5733;
+	text-align: left;
+}
+.fa {
+	margin-left: 50px;
+}
