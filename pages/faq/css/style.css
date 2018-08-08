@@ -163,12 +163,13 @@ nav ul li:nth-child(-n+4):hover {
 /** FAW **/
 section {
 	width: 100%;
-	position: absolute;
+    position: inherit; /** Dito ako nagkamali dahil sa absolute property na nilagay **/
 }
 .container {
   margin: 0 auto;
   padding: 6em;
   width: 100%;
+  z-index: -1;
 }
 
 h2 {
@@ -185,7 +186,7 @@ h2 {
 }
 
 .accordion a {
-  position: relative;
+  position: inherit;
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;

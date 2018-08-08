@@ -71,8 +71,8 @@ nav ul {
       transition: 1s;
 }
 
-nav.black ul {
-      background: #000;
+nav.color ul {
+      background: #ff5733 ;
 }
 
 nav ul li {
